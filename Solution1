@@ -1,0 +1,18 @@
+To find out how many types of tigers can be found in the taxonomy table and the "ncbi_id" of the Sumatran Tiger, we can use the following query:
+
+SELECT COUNT(*) AS num_tigers
+FROM taxonomy
+WHERE scientific_name LIKE '%tiger%';
+
+SELECT ncbi_id
+FROM taxonomy
+WHERE scientific_name = 'Panthera tigris sumatrae';
+
+The first query will give you the count of tiger species in the taxonomy table, and the second query will provide the "ncbi_id" of the Sumatran Tiger by filtering for its scientific name.
+
+Answer - 
+The number of types of tigers in the taxonomy table is 1.
+This means that there is only one distinct entry in the taxonomy table that represents a tiger species.
+The "ncbi_id" is a unique identifier assigned to each species in the table.
+The "ncbi_id" of the Sumatran Tiger, which is a specific subspecies of tiger known as Panthera tigris sumatrae, is 441959.
+This allows us to uniquely identify and retrieve information about the Sumatran Tiger from the taxonomy table.
